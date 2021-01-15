@@ -1,0 +1,13 @@
+[submodule "themes/ananke"]
+	path = themes/ananke
+	url = https://github.com/budparr/gohugo-theme-ananke.git
+[submodule "themes/uBlogger"]
+	path = themes/uBlogger
+	url = https://github.com/upagge/uBlogger.git
+[submodule "themes/LoveIt"]
+	path = themes/LoveIt
+	url = https://github.com/dillonzq/LoveIt.git
+[submodule "public"]
+	path = public
+	url = git@github.com:dantrim/dantrim.github.io.git
+	branch = main
