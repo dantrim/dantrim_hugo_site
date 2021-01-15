@@ -41,7 +41,9 @@ share:
   enable: true
   # ...
 comment:
-  enable: false
+  enable: true
+  disques :
+    enable: true
   # ...
 library:
   css:
@@ -155,10 +157,11 @@ classDiagram
 gitGraph:
 options
 {
-    "nodeSpacing": 100,
+    "nodeSpacing": 50,
     "nodeRadius": 10
 }
 end
+    commit
     commit
     branch newbranch
     checkout newbranch
@@ -168,6 +171,15 @@ end
     commit
     commit
     merge newbranch
+    branch feature
+    checkout feature
+    commit
+    checkout master
+    commit
+    commit
+    merge feature
+    commit
+    
 {{< /mermaid >}}
 
 ## E-charts
