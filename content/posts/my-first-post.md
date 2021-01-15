@@ -3,7 +3,7 @@ title: "First Post Testing Hugo"
 subtitle: "And Other Stuff Too"
 date: 2021-01-15T09:36:00-08:00
 lastmod: 2021-01-15T09:36:00-08:00
-draft: true
+draft: false
 author: "Daniel Joseph Antrim"
 authorLink: ""
 description: "This is the article description."
@@ -41,7 +41,7 @@ share:
   enable: true
   # ...
 comment:
-  enable: true
+  enable: false
   # ...
 library:
   css:
