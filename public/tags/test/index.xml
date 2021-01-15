@@ -1,0 +1,17 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>test - Tag - Daniel Joseph Antrim</title>
+        <link>https://dantrim.github.io/tags/test/</link>
+        <description>test - Tag - Daniel Joseph Antrim</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>dantrim1023@gmail.com (Daniel Joseph Antrim)</managingEditor>
+            <webMaster>dantrim1023@gmail.com (Daniel Joseph Antrim)</webMaster><lastBuildDate>Fri, 15 Jan 2021 09:36:00 -0800</lastBuildDate><atom:link href="https://dantrim.github.io/tags/test/" rel="self" type="application/rss+xml" /><item>
+    <title>First Post Testing Hugo</title>
+    <link>https://dantrim.github.io/my-first-post/</link>
+    <pubDate>Fri, 15 Jan 2021 09:36:00 -0800</pubDate>
+    <author>Author</author>
+    <guid>https://dantrim.github.io/my-first-post/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/images/adventure_time.png" referrerpolicy="no-referrer">
+            </div>This is the article description.]]></description>
+</item></channel>
+</rss>
