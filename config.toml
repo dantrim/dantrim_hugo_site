@@ -29,7 +29,7 @@ enableEmoji = true
     post = ""
     name = "Tags"
     url = "/tags/"
-    title = "Daniel Joseph Antrim"
+    title = "Daniel Joseph Antrim / tags"
     weight = 2
   [[menu.main]]
     identifier = "categories"
@@ -37,7 +37,7 @@ enableEmoji = true
     post = ""
     name = "Categories"
     url = "/categories/"
-    title = ""
+    title = "Daniel Joseph Antrim / categories"
     weight = 3
 
 # Markup related configuration in Hugo
