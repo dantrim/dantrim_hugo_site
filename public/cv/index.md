@@ -1,5 +1,0 @@
-# CV
-
-
-# Curriculum Vitae
-
