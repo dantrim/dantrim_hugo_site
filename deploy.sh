@@ -24,11 +24,13 @@ if [ -d public ]; then
     git commit -m "$msg"
     
     # Push source and build repos.
+    printf "\033[0;32mPushing updates to gh-pages...\033[0m\n"
     git push origin main
     popd
 
     git add public
     git commit -m "$msg"
+    printf "\033[0;32mPushing updates of public/ to source repository...\033[0m\n"
     git push
 else
     printf "\033[0;31mNo \"public\" dir found!\033[0m\n"
