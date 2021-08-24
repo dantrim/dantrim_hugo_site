@@ -28,5 +28,9 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         if: github.ref == 'refs/heads/main'
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+            #github_token: ${{ secrets.GITHUB_TOKEN }}
+            #publish_dir: ./public
+          github_token: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+          external_repository: dantrim/dantrim.github.io
+          publish_brnach: main
           publish_dir: ./public
