@@ -10,8 +10,7 @@ $ hugo server -D
 
 ## Publishing to Github Pages
 
-Run the `deploy.sh` script as follows:
-```shell
-./deploy.sh
-```
-In a few minutes, the updates should appear at [https://dantrim.github.io/](https://dantrim.github.io/).
+Publishing to [GitHub pages](https://pages.github.com/) is done automatically
+via GitHub actions in the CI.
+Every push to `main` will build the Hugo site and deply to
+[https://dantrim.github.io/](https://dantrim.github.io/).
