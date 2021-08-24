@@ -78,6 +78,7 @@ enableEmoji = true
     themeColor = "#ffffff"
     # Safari mask icon color
     iconColor = "#5bbad5"
+    #iconColor = "#ffffff"
     # Windows v8-10 tile color
     tileColor = "#da532c"
 
@@ -172,9 +173,9 @@ enableEmoji = true
       #  title shown in home page (HTML format is supported)
       title = ""
       # subtitle shown in home page
-      subtitle = ">> consider again that dot."
+      subtitle = "consider again that dot"
       # whether to use typeit animation for subtitle
-      typeit = true
+      typeit = false
       # whether to show social links
       social = true
       #  disclaimer (HTML format is supported)
@@ -194,7 +195,7 @@ enableEmoji = true
     Linkedin = "daniel-joseph-antrim"
     Twitter = "dantrim1134"
     Instagram = "dantrim1134"
-    Facebook = "RevoltAgainstActuality"
+    #Facebook = "RevoltAgainstActuality"
     #Telegram = "xxxx"
     Medium = ""
     Gitlab = "dantrim"
@@ -252,7 +253,7 @@ enableEmoji = true
     XMPP = ""
     Matrix = ""
     Bilibili = ""
-    Email = "dantrim1023@gmail.com"
+    #Email = "dantrim1023@gmail.com"
     RSS = false # 
 
   #  Page config
@@ -280,7 +281,7 @@ enableEmoji = true
       # whether to enable the table of the contents
       enable = true
       #  whether to keep the static table of the contents in front of the post
-      keepStatic = true
+      keepStatic = false
       # whether to make the table of the contents in the sidebar automatically collapsed
       auto = true
     #  KaTeX mathematical formulas
@@ -350,7 +351,7 @@ enableEmoji = true
       Mix = false
     #  Comment config
     [params.page.comment]
-      enable = true
+      enable = false
       # Disqus comment config
       [params.page.comment.disqus]
         # 
@@ -527,7 +528,7 @@ enableEmoji = true
       unsafe = true
   # Table Of Contents settings
   [markup.tableOfContents]
-    startLevel = 2
+    startLevel = 3
     endLevel = 6
 
 # Author config
@@ -576,4 +577,5 @@ enableEmoji = true
   section = ["HTML", "RSS"]
   taxonomy = ["HTML", "RSS"]
   taxonomyTerm = ["HTML"]
+
 
