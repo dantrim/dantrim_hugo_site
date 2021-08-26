@@ -1,6 +1,6 @@
-baseURL = "http://example.org/"
+baseURL = "https://dantrim.github.io/"
 languageCode = "en-us"
-title = "Ink"
+title = "Daniel Joseph Antrim"
 theme = "ink"
 paginate = 5
 
@@ -14,10 +14,11 @@ googleAnalytics = "UA-123-45"
 disqusShortname = "ink-demo"
 
 [params]
-	subtitle = "Crisp, minimal personal [blog theme for Hugo](https://github.com/knadh/hugo-ink)"
+    subtitle = "consider again that dot"
 
 	# Optional 64x64 avatar image.
-	avatar = "https://image.freepik.com/free-vector/young-man-head-with-beard-avatar-character_24877-36786.jpg"
+	#avatar = "https://image.freepik.com/free-vector/young-man-head-with-beard-avatar-character_24877-36786.jpg"
+    avatar = "/images/adventure_time.png"
 
 	# Content types to disable Disqus on.
 	disableDisqusTypes = ["page"]
@@ -36,7 +37,7 @@ url = "/"
 weight = 1
 
 [[menu.main]]
-name = "All posts"
+name = "Posts"
 url = "/posts"
 weight = 2
 
@@ -51,14 +52,25 @@ url = "/tags"
 weight = 4
 
 [[params.social]]
-name = "Github"
-icon = "github"
-url = "https://github.com/knadh/hugo-ink"
+name = "Twitter"
+icon = "twitter"
+url = "https://twitter.com/dantrim1134"
 
 [[params.social]]
-name = "RSS"
-icon = "rss"
-url = "/index.xml"
+name = "Github"
+icon = "github"
+url = "https://github.com/dantrim"
+
+
+[[params.social]]
+name = "GitLab"
+icon = "gitlab"
+url = "https://gitlab.cern.ch/dantrim"
+
+#[[params.social]]
+#name = "RSS"
+#icon = "rss"
+#url = "/index.xml"
 
 [taxonomies]
    tag = "tags"
