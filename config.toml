@@ -4,17 +4,19 @@ title = "Daniel Joseph Antrim"
 theme = "ink"
 paginate = 5
 
-copyright = "© Copyright notice"
+copyright = "© Copyright Daniel Joseph Antrim"
 
 pygmentsstyle = "vs"
 pygmentscodefences = true
 pygmentscodefencesguesssyntax = true
 
 googleAnalytics = "UA-123-45"
-disqusShortname = "ink-demo"
+
 
 [params]
     subtitle = "consider again that dot"
+
+    disqus = "false"
 
 	# Optional 64x64 avatar image.
 	#avatar = "https://image.freepik.com/free-vector/young-man-head-with-beard-avatar-character_24877-36786.jpg"
