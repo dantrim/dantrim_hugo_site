@@ -18,3 +18,10 @@ Every push to `main` will build the Hugo site and deply to
 ## Notes on adding KaTeX hook to Hyde
 
 Adding a KaTeX hook to the Hyde theme is disussed [here](https://dzhg.dev/posts/2020/08/how-to-add-latex-support-in-hugo/).
+
+## Other promising themese
+
+Generally a good list of themes is [here](https://wiki.nikitavoloboev.xyz/web/static-sites/hugo).
+Good ones that look promising IMO are:
+
+- [Ink](https://github.com/knadh/hugo-ink)
