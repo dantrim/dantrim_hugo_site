@@ -10,6 +10,8 @@ description: "This is the article description."
 license: ""
 images: []
 
+katex: true
+
 tags: ["test", "test2"]
 categories: ["foo"]
 ---
@@ -21,7 +23,7 @@ categories: ["foo"]
 
 This is a place for dummy text.
 
-### Top Level (Header 3)
+# Top Level
 
 > This is an unattributed quote
 
@@ -29,20 +31,21 @@ This is a place for dummy text.
 
 [^1]: Foo Bar is Foo Baz
 
-#### Header 4
+## Header 2
 
 Hello `world`
 
-##### Header 5
+### Header 3
 
-###### Header 6
+#### Header 4
 
 
-### Some Code Examples 
+# Some Code Examples 
 
-#### VHDL
+## VHDL
 
-```vhd {linenos=false, label=foo}
+<!--```vhdl  {linenos=false, label=foo}-->
+```vhdl
 library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
@@ -75,6 +78,7 @@ int main(int argc, char* argv[]) {
 }
 ```
 
+---
 #### Python
 
 And for Python,
@@ -101,13 +105,13 @@ fn main() {
 
 ### Mathematical Formula
 
-The information entropy, $ H $, over a discrete data is given as,
-$$ H = - \sum_i p_i \cdot log_2 \(p_i\), $$
-where the $ p_i $ are the probabilities of codes/states, indexed by $ i $, in the data.
+The information entropy, \\(H\\), over a discrete data is given as,
+\\[ H = - \sum_i p_i \cdot log_2 \(p_i\), \\]
+where the \\(p_i\\) are the probabilities of codes/states, indexed by \\( i \\), in the data.
 
 When considering a continuous distribution, interpreted as a *probability distribution function* that
-satisfies $ \int_{-\inf}^{+\inf} p(x) dx = 1$, the information entropy is given
+satisfies \\( \int_{-\inf}^{+\inf} p(x) dx = 1 \\), the information entropy is given
 by,
 
-$$ H(x) = - \int_{-\inf}^{+\inf} p(x) \cdot log_2\[p(x)\] dx. $$ 
+\\[ H(x) = - \int_{-\inf}^{+\inf} p(x) \cdot log_2\[p(x)\] dx. \\] 
 

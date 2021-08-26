@@ -1,581 +1,65 @@
-baseURL = "https://dantrim.github.io/"
-# [en, zh-cn, fr, ...] determines default content language
-defaultContentLanguage = "en"
-# language code
-languageCode = "en"
-title = "Daniel Joseph Antrim"
+baseURL = "http://example.org/"
+languageCode = "en-us"
+title = "Ink"
+theme = "hyde"
+paginate = 5
 
-# Change the default theme to be use when building the site with Hugo
-theme = "LoveIt"
+copyright = "© Copyright notice"
 
-enableEmoji = true
+pygmentsstyle = "vs"
+pygmentscodefences = true
+pygmentscodefencesguesssyntax = true
 
-
-[menu]
-  [[menu.main]]
-    identifier = "posts"
-    # you can add extra information before the name (HTML format is supported), such as icons
-    pre = ""
-    # you can add extra information after the name (HTML format is supported), such as icons
-    post = ""
-    name = "Posts"
-    url = "/posts/"
-    # title will be shown when you hover on this menu link
-    title = "Daniel Joseph Antrim"
-    weight = 1
-  [[menu.main]]
-    identifier = "tags"
-    pre = ""
-    post = ""
-    name = "Tags"
-    url = "/tags/"
-    title = "Daniel Joseph Antrim / tags"
-    weight = 2
-  [[menu.main]]
-    identifier = "categories"
-    pre = ""
-    post = ""
-    name = "Categories"
-    url = "/categories/"
-    title = "Daniel Joseph Antrim / categories"
-    weight = 3
-
-# Markup related configuration in Hugo
-#[markup]
-#  # Syntax Highlighting (https://gohugo.io/content-management/syntax-highlighting)
-#  [markup.highlight]
-#    # false is a necessary configuration (https://github.com/dillonzq/LoveIt/issues/158)
-#    noClasses = false
+googleAnalytics = "UA-123-45"
+disqusShortname = "ink-demo"
 
 [params]
-  #  LoveIt theme version
-  version = "0.2.X"
-  # site description
-  description = "This is My New Hugo Site"
-  # site keywords
-  keywords = ["Theme", "Hugo"]
-  # site default theme ("light", "dark", "auto")
-  defaultTheme = "auto"
-  # public git repo url only then enableGitInfo is true
-  gitRepo = "https://github.com/dantrim/"
-  #  which hash function used for SRI, when empty, no SRI is used
-  # ("sha256", "sha384", "sha512", "md5")
-  fingerprint = ""
-  #  date format
-  dateFormat = "2006-01-02"
-  # website images for Open Graph and Twitter Cards
-  images = ["/logo.png"]
+	subtitle = "Crisp, minimal personal [blog theme for Hugo](https://github.com/knadh/hugo-ink)"
 
-  #  App icon config
-  [params.app]
-    # optional site title override for the app when added to an iOS home screen or Android launcher
-    title = "LoveIt"
-    # whether to omit favicon resource links
-    noFavicon = false
-    # modern SVG favicon to use in place of older style .png and .ico files
-    svgFavicon = ""
-    # Android browser theme color
-    themeColor = "#ffffff"
-    # Safari mask icon color
-    iconColor = "#5bbad5"
-    #iconColor = "#ffffff"
-    # Windows v8-10 tile color
-    tileColor = "#da532c"
+	# Optional 64x64 avatar image.
+	avatar = "https://image.freepik.com/free-vector/young-man-head-with-beard-avatar-character_24877-36786.jpg"
 
-  #  Search config
-  [params.search]
-    enable = true
-    # type of search engine ("lunr", "algolia")
-    type = "lunr"
-    # max index length of the chunked content
-    contentLength = 4000
-    # placeholder of the search bar
-    placeholder = ""
-    #  max number of results length
-    maxResultLength = 10
-    #  snippet length of the result
-    snippetLength = 30
-    #  HTML tag name of the highlight part in results
-    highlightTag = "em"
-    #  whether to use the absolute URL based on the baseURL in search index
-    absoluteURL = false
-    [params.search.algolia]
-      index = ""
-      appID = ""
-      searchKey = ""
+	# Content types to disable Disqus on.
+	disableDisqusTypes = ["page"]
+	
+	featherIconsCDN = true
 
-  # Header config
-  [params.header]
-    # desktop header mode ("fixed", "normal", "auto")
-    desktopMode = "fixed"
-    # mobile header mode ("fixed", "normal", "auto")
-    mobileMode = "auto"
-    #  Header title config
-    [params.header.title]
-      # URL of the LOGO
-      logo = ""
-      # title name
-      name = "Daniel Joseph Antrim"
-      # you can add extra information before the name (HTML format is supported), such as icons
-      pre = ""
-      # you can add extra information after the name (HTML format is supported), such as icons
-      post = ""
-      #  whether to use typeit animation for title name
-      typeit = false
+	mode = "auto" # "dark" or "auto"
+	# customCSS = "css/custom.css"  # Custom CSS applied to default styles.
+	# customDarkCSS = "css/custom-dark.css"  # Custom styles applied to dark mode css.
+	# customJS = ["js/custom.js", "js/custom1.js"]  # Custom JS scripts.
 
-  # Footer config
-  [params.footer]
-    enable = true
-    #  Custom content (HTML format is supported)
-    custom = ''
-    #  whether to show Hugo and theme info
-    hugo = true
-    #  whether to show copyright info
-    copyright = true
-    #  whether to show the author
-    author = true
-    # Site creation time
-    since = 2021
-    # ICP info only in China (HTML format is supported)
-    icp = ""
-    # license info (HTML format is supported)
-    license = '<a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a>'
+# Nav.
+[[menu.main]]
+name = "Home"
+url = "/"
+weight = 1
 
-  #  Section (all posts) page config
-  [params.section]
-    # special amount of posts in each section page
-    paginate = 20
-    # date format (month and day)
-    dateFormat = "01-02"
-    # amount of RSS pages
-    rss = 10
+[[menu.main]]
+name = "All posts"
+url = "/posts"
+weight = 2
 
-  #  List (category or tag) page config
-  [params.list]
-    # special amount of posts in each list page
-    paginate = 20
-    # date format (month and day)
-    dateFormat = "01-02"
-    # amount of RSS pages
-    rss = 10
+[[menu.main]]
+name = "About"
+url = "/about"
+weight = 3
 
-  # Home page config
-  [params.home]
-    #  amount of RSS pages
-    rss = 10
-    # Home page profile
-    [params.home.profile]
-      enable = true
-      # Gravatar Email for preferred avatar in home page
-      gravatarEmail = ""
-      # URL of avatar shown in home page
-      avatarURL = "/images/adventure_time.png"
-      #  title shown in home page (HTML format is supported)
-      title = ""
-      # subtitle shown in home page
-      subtitle = "consider again that dot"
-      # whether to use typeit animation for subtitle
-      typeit = false
-      # whether to show social links
-      social = true
-      #  disclaimer (HTML format is supported)
-      disclaimer = "This is my personal page, all views and opinions expressed are my own and not those of any entity with which I am, have been, or will be affiliated."
-    # Home page posts
-    [params.home.posts]
-      enable = true
-      # special amount of posts in each home posts page
-      paginate = 6
-      #  replaced with hiddenFromHomePage in params.page
-      # default behavior when you don't set "hiddenFromHomePage" in front matter
-      defaultHiddenFromHomePage = false
+[[menu.main]]
+name = "Tags"
+url = "/tags"
+weight = 4
 
-  # Social config about the author
-  [params.social]
-    GitHub = "dantrim"
-    Linkedin = "daniel-joseph-antrim"
-    Twitter = "dantrim1134"
-    Instagram = "dantrim1134"
-    #Facebook = "RevoltAgainstActuality"
-    #Telegram = "xxxx"
-    Medium = ""
-    Gitlab = "dantrim"
-    Youtubelegacy = ""
-    Youtubecustom = ""
-    Youtubechannel = ""
-    Tumblr = ""
-    Quora = ""
-    Keybase = ""
-    Pinterest = ""
-    Reddit = ""
-    Codepen = ""
-    FreeCodeCamp = ""
-    Bitbucket = ""
-    Stackoverflow = ""
-    Weibo = ""
-    Odnoklassniki = ""
-    VK = ""
-    Flickr = ""
-    Xing = ""
-    Snapchat = ""
-    Soundcloud = ""
-    Spotify = ""
-    Bandcamp = ""
-    Paypal = ""
-    Fivehundredpx = ""
-    Mix = ""
-    Goodreads = ""
-    Lastfm = ""
-    Foursquare = ""
-    Hackernews = ""
-    Kickstarter = ""
-    Patreon = ""
-    Steam = ""
-    Twitch = ""
-    Strava = ""
-    Skype = ""
-    Whatsapp = ""
-    Zhihu = ""
-    Douban = ""
-    Angellist = ""
-    Slidershare = ""
-    Jsfiddle = ""
-    Deviantart = ""
-    Behance = ""
-    Dribbble = ""
-    Wordpress = ""
-    Vine = ""
-    Googlescholar = ""
-    Researchgate = ""
-    Mastodon = ""
-    Thingiverse = ""
-    Devto = ""
-    Gitea = ""
-    XMPP = ""
-    Matrix = ""
-    Bilibili = ""
-    #Email = "dantrim1023@gmail.com"
-    RSS = false # 
+[[params.social]]
+name = "Github"
+icon = "github"
+url = "https://github.com/knadh/hugo-ink"
 
-  #  Page config
-  [params.page]
-    #  whether to hide a page from home page
-    hiddenFromHomePage = false
-    #  whether to hide a page from search results
-    hiddenFromSearch = false
-    #  whether to enable twemoji
-    twemoji = false
-    # whether to enable lightgallery
-    lightgallery = false
-    #  whether to enable the ruby extended syntax
-    ruby = true
-    #  whether to enable the fraction extended syntax
-    fraction = true
-    #  whether to enable the fontawesome extended syntax
-    fontawesome = true
-    # whether to show link to Raw Markdown content of the content
-    linkToMarkdown = true
-    #  whether to show the full text content in RSS
-    rssFullText = false
-    #  Table of the contents config
-    [params.page.toc]
-      # whether to enable the table of the contents
-      enable = true
-      #  whether to keep the static table of the contents in front of the post
-      keepStatic = false
-      # whether to make the table of the contents in the sidebar automatically collapsed
-      auto = true
-    #  KaTeX mathematical formulas
-    [params.page.math]
-      enable = true
-      # default block delimiter is $$ ... $$ and \\[ ... \\]
-      blockLeftDelimiter = ""
-      blockRightDelimiter = ""
-      # default inline delimiter is $ ... $ and \\( ... \\)
-      inlineLeftDelimiter = ""
-      inlineRightDelimiter = ""
-      # KaTeX extension copy_tex
-      copyTex = true
-      # KaTeX extension mhchem
-      mhchem = true
-    #  Code config
-    [params.page.code]
-      # whether to show the copy button of the code block
-      copy = true
-      # the maximum number of lines of displayed code by default
-      maxShownLines = 10
-    #  Mapbox GL JS config
-    [params.page.mapbox]
-      # access token of Mapbox GL JS
-      accessToken = ""
-      # style for the light theme
-      lightStyle = "mapbox://styles/mapbox/light-v9"
-      # style for the dark theme
-      darkStyle = "mapbox://styles/mapbox/dark-v9"
-      # whether to add NavigationControl
-      navigation = true
-      # whether to add GeolocateControl
-      geolocate = true
-      # whether to add ScaleControl
-      scale = true
-      # whether to add FullscreenControl
-      fullscreen = true
-    #  social share links in post page
-    [params.page.share]
-      enable = true
-      Twitter = true
-      Facebook = false
-      Linkedin = false
-      Whatsapp = false
-      Pinterest = false
-      Tumblr = false
-      HackerNews = false
-      Reddit = false
-      VK = false
-      Buffer = false
-      Xing = false
-      Line = false
-      Instapaper = false
-      Pocket = false
-      Digg = false
-      Stumbleupon = false
-      Flipboard = false
-      Weibo = false
-      Renren = false
-      Myspace = false
-      Blogger = false
-      Baidu = false
-      Odnoklassniki = false
-      Evernote = false
-      Skype = false
-      Trello = false
-      Mix = false
-    #  Comment config
-    [params.page.comment]
-      enable = false
-      # Disqus comment config
-      [params.page.comment.disqus]
-        # 
-        enable = true
-        # Disqus shortname to use Disqus in posts
-        shortname = "https-dantrim-github-io"
-      # Gitalk comment config
-      [params.page.comment.gitalk]
-        # 
-        enable = false
-        owner = ""
-        repo = ""
-        clientId = ""
-        clientSecret = ""
-      # Valine comment config
-      [params.page.comment.valine]
-        enable = false
-        appId = ""
-        appKey = ""
-        placeholder = ""
-        avatar = "mp"
-        meta= ""
-        pageSize = 10
-        lang = ""
-        visitor = true
-        recordIP = true
-        highlight = true
-        enableQQ = false
-        serverURLs = ""
-        #  emoji data file name, default is "google.yml"
-        # ("apple.yml", "google.yml", "facebook.yml", "twitter.yml")
-        # located in "themes/LoveIt/assets/data/emoji/" directory
-        # you can store your own data files in the same path under your project:
-        # "assets/data/emoji/"
-        emoji = ""
-      # Facebook comment config
-      [params.page.comment.facebook]
-        enable = false
-        width = "100%"
-        numPosts = 10
-        appId = ""
-        languageCode = ""
-      #  Telegram comments config
-      [params.page.comment.telegram]
-        enable = false
-        siteID = ""
-        limit = 5
-        height = ""
-        color = ""
-        colorful = true
-        dislikes = false
-        outlined = false
-      #  Commento comment config
-      [params.page.comment.commento]
-        enable = false
-      #  Utterances comment config
-      [params.page.comment.utterances]
-        enable = false
-        # owner/repo
-        repo = ""
-        issueTerm = "pathname"
-        label = ""
-        lightTheme = "github-light"
-        darkTheme = "github-dark"
-    #  Third-party library config
-    [params.page.library]
-      [params.page.library.css]
-        # someCSS = "some.css"
-        # located in "assets/"
-        # Or
-        # someCSS = "https://cdn.example.com/some.css"
-      [params.page.library.js]
-        # someJavascript = "some.js"
-        # located in "assets/"
-        # Or
-        # someJavascript = "https://cdn.example.com/some.js"
-    #  Page SEO config
-    [params.page.seo]
-      # image URL
-      images = []
-      # Publisher info
-      [params.page.seo.publisher]
-        name = ""
-        logoUrl = ""
+[[params.social]]
+name = "RSS"
+icon = "rss"
+url = "/index.xml"
 
-  #  TypeIt config
-  [params.typeit]
-    # typing speed between each step (measured in milliseconds)
-    speed = 100
-    # blinking speed of the cursor (measured in milliseconds)
-    cursorSpeed = 1000
-    # character used for the cursor (HTML format is supported)
-    cursorChar = "|"
-    # cursor duration after typing finishing (measured in milliseconds, "-1" means unlimited)
-    duration = -1
-
-  # Site verification code config for Google/Bing/Yandex/Pinterest/Baidu
-  [params.verification]
-    google = ""
-    bing = ""
-    yandex = ""
-    pinterest = ""
-    baidu = ""
-
-  #  Site SEO config
-  [params.seo]
-    # image URL
-    image = ""
-    # thumbnail URL
-    thumbnailUrl = ""
-
-  #  Analytics config
-  [params.analytics]
-    enable = false
-    # Google Analytics
-    [params.analytics.google]
-      id = ""
-      # whether to anonymize IP
-      anonymizeIP = true
-    # Fathom Analytics
-    [params.analytics.fathom]
-      id = ""
-      # server url for your tracker if you're self hosting
-      server = ""
-
-  #  Cookie consent config
-  [params.cookieconsent]
-    enable = true
-    # text strings used for Cookie consent banner
-    [params.cookieconsent.content]
-      message = ""
-      dismiss = ""
-      link = ""
-
-  #  CDN config for third-party library files
-  [params.cdn]
-    # CDN data file name, disabled by default
-    # ("jsdelivr.yml")
-    # located in "themes/LoveIt/assets/data/cdn/" directory
-    # you can store your own data files in the same path under your project:
-    # "assets/data/cdn/"
-    data = ""
-
-  #  Compatibility config
-  [params.compatibility]
-    # whether to use Polyfill.io to be compatible with older browsers
-    polyfill = false
-    # whether to use object-fit-images to be compatible with older browsers
-    objectFit = false
-
-# Markup related config in Hugo
-[markup]
-  # Syntax Highlighting
-  [markup.highlight]
-    codeFences = true
-    guessSyntax = true
-    lineNos = true
-    lineNumbersInTable = true
-    # false is a necessary configuration
-    # (https://github.com/dillonzq/LoveIt/issues/158)
-    noClasses = false
-  # Goldmark is from Hugo 0.60 the default library used for Markdown
-  [markup.goldmark]
-    [markup.goldmark.extensions]
-      definitionList = true
-      footnote = true
-      linkify = true
-      strikethrough = true
-      table = true
-      taskList = true
-      typographer = true
-    [markup.goldmark.renderer]
-      # whether to use HTML tags directly in the document
-      unsafe = true
-  # Table Of Contents settings
-  [markup.tableOfContents]
-    startLevel = 3
-    endLevel = 6
-
-# Author config
-[author]
-  name = "Daniel Joseph Antrim"
-  email = "dantrim1023@gmail.com"
-  link = ""
-
-# Sitemap config
-[sitemap]
-  changefreq = "weekly"
-  filename = "sitemap.xml"
-  priority = 0.5
-
-# Permalinks config
-[Permalinks]
-  # posts = ":year/:month/:filename"
-  posts = ":filename"
-
-# Privacy config
-[privacy]
-  #  privacy of the Google Analytics (replaced by params.analytics.google)
-  [privacy.googleAnalytics]
-    # ...
-  [privacy.twitter]
-    enableDNT = true
-  [privacy.youtube]
-    privacyEnhanced = true
-
-# Options to make output .md files
-[mediaTypes]
-  [mediaTypes."text/plain"]
-    suffixes = ["md"]
-
-# Options to make output .md files
-[outputFormats.MarkDown]
-  mediaType = "text/plain"
-  isPlainText = true
-  isHTML = false
-
-# Options to make hugo output files
-[outputs]
-  # 
-  home = ["HTML", "RSS", "JSON"]
-  page = ["HTML", "MarkDown"]
-  section = ["HTML", "RSS"]
-  taxonomy = ["HTML", "RSS"]
-  taxonomyTerm = ["HTML"]
-
+[taxonomies]
+   tag = "tags"
 
